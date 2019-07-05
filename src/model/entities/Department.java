@@ -5,11 +5,11 @@ import java.io.Serializable;
 public class Department implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+
 	private Integer id;
 	private String name;
 	
 	public Department() {
-
 	}
 
 	public Department(Integer id, String name) {
@@ -48,11 +48,11 @@ public class Department implements Serializable {
 		if (obj == null)
 			return false;
 		if (getClass() != obj.getClass())
-			return false;	
+			return false;
 		Department other = (Department) obj;
 		if (id == null) {
 			if (other.id != null)
-				return false;		
+				return false;
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
